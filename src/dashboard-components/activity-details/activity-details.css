@@ -1,0 +1,15 @@
+.activitydetails-container{
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+}
+.activity-details-image{
+    width:70px;
+    /* height: 60px; */
+}
+.activity-status{
+    color:rgb(49, 5, 78);
+}
+.activity-date{
+    color: gray;
+}

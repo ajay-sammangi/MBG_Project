@@ -1,0 +1,15 @@
+.service-list-container{
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+}
+.service-details-image{
+    width:70px;
+    /* height: 60px; */
+}
+.service-status{
+    color:rgb(49, 5, 78);
+}
+.service-date{
+    color: gray;
+}
