@@ -4,6 +4,7 @@ import Home from './Routes/Home/Home';
 // import Sidemenu from './dashboard-components/Sidemenu/Sidemenu';
 import Services from './Routes/Services/Services';
 import Form from './Routes/Form/Form.js';
+
 const App=() =>{
   return (
     <Routes>
@@ -11,6 +12,7 @@ const App=() =>{
       <Route path="/" element={<Home />} />
       <Route path='services' element={<Services />} />
       <Route path='form' element={<Form />} />
+      
     </Routes> 
   );
 }

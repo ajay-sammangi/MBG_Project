@@ -1,0 +1,5 @@
+.home-wrapper{
+    width:calc(100% - 280px);
+    height: 100vh;
+    overflow-y: scroll;
+}

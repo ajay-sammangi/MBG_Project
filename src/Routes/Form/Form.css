@@ -1,3 +1,15 @@
-.form-container{
-    width: 70%;
+.form-wrapper{
+    width:calc(100% -35% -280px);
+    height: 100vh;
+    overflow-y: scroll;
+}
+.comments-section{
+    width: 35%;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.selected:hover{
+    cursor: pointer;
+    color:blue
 }

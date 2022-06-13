@@ -1,4 +1,5 @@
 import '../../App.css';
+import '../Home/Home.css';
 import Sidemenu from '../../dashboard-components/Sidemenu/Sidemenu'
 import Header from '../../dashboard-components/Header/Header';
 import Statuscard from '../../dashboard-components/status-card/status-card';
@@ -7,15 +8,15 @@ function Home() {
   return (
     <div className="App">
       <Sidemenu />
-      <div className="wrapper ml-2 mr-2">
+      <div className="home-wrapper ml-2 mr-2">
         <Header />
-        <div className="status-card-container ">
+        <div className="status-card-container d-flex flex-row justify-content-between">
           <div className="status-card">
-            <h4 className="pl-2">Taxation</h4>
+            <h4 className="ml-3 mt-2">Taxation</h4>
             <Statuscard />
           </div>
           <div className="status-card ml-4">
-            <h4 className="pl-2">Legal</h4>
+            <h4 className="ml-3 mt-2">Legal</h4>
             <Statuscard />
           </div>
         </div>

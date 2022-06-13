@@ -17,7 +17,7 @@ const ServicesList = () => {
             className="service-details-image"
             />
         </div>
-        <div className="d-flex flex-column ml-3">
+        <div className="service-title d-flex flex-column ml-3">
             <h5 className="">title</h5>
             <p className='m-0'>name</p>
         </div>

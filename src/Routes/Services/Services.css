@@ -1,6 +1,27 @@
-.wrapper{
+.service-wrapper{
     width: calc(100% - 280px);
     height: 100vh;
     overflow-y: auto;
     
+}
+.service-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 10px;
+    border-bottom: 1px solid gray;
+}
+.search-div{
+    position: relative;
+}
+.search-icon{
+    position: absolute;
+    left: 5px;
+}
+.search-input{
+    border:1px solid gray;
+    border-radius: 5px;
+    outline: none;
+    text-indent: 25px;
 }

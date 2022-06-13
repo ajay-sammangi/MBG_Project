@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
+import '../DateFilter/DateFilter.css'
 const DateFilter = () => {
     const [startDate, setStartDate] = useState(null);
   const [endDate, setEndDate] = useState(null);
