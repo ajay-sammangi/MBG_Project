@@ -14,7 +14,7 @@
     border-radius: 5px;
     padding: 2px;
     outline: none;
-    font-size: 16px;
+    font-size: 14px;
      
 }
 .label-text{
@@ -31,7 +31,7 @@
 .select-div{
     float: right;
     width: 60%;
-    height: 25px;
+    /* height: 25px; */
     outline: none;
     font-size: 16px;
 }
@@ -66,7 +66,7 @@
     border-radius: 5px;
     outline: none;
     font-size: 16px;
-    padding: 4px;
+    padding: 2px;
      
 }
 .button-style{

@@ -18,13 +18,13 @@ const ServicesList = () => {
             />
         </div>
         <div className="service-title d-flex flex-column ml-3">
-            <h5 className="">title</h5>
+            <h5 className="mb-0">title</h5>
             <p className='m-0'>name</p>
         </div>
         <div className="d-flex flex-column ml-5">
-            <h5 className="service-status">Checklist submission details</h5>
+            <h5 className="service-status mb-0">Checklist submission details</h5>
 
-            <span className="mr-2 service-date">
+            <span className="service-date mr-2 mb-0">
             <FontAwesomeIcon
                 className="mr-2"
                 icon={faCalendar}
@@ -32,9 +32,9 @@ const ServicesList = () => {
             date
             </span>
         </div>
-        <div className="d-flex flex-column ml-3" style={{"text-align":"right"}}>
-            <h6 className="assignee">@name</h6>
-            <h6>Status</h6>
+        <div className="d-flex flex-column ml-3" style={{"text-align":"right",color:'black'}}>
+            <h6 className="m-0">@name</h6>
+            <h6 className='m-0'>Status</h6>
             <h6>Status update date</h6>
         </div>
         </Link>       

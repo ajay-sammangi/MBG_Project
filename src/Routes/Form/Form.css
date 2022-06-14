@@ -1,10 +1,10 @@
 .form-wrapper{
-    width:calc(100% -35% -280px);
+    width:calc(100% -40% -280px);
     height: 100vh;
     overflow-y: scroll;
 }
 .comments-section{
-    width: 35%;
+    width: 40%;
     height: 100vh;
     overflow-y: scroll;
 }

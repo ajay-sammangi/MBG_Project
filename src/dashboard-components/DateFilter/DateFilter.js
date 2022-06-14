@@ -1,51 +1,51 @@
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
-import '../DateFilter/DateFilter.css'
-const DateFilter = () => {
-    const [startDate, setStartDate] = useState(null);
-  const [endDate, setEndDate] = useState(null);
-    return (
-        <div>
-        <div className="d-flex flex-row align-items-center">
+import { faCalendar } from "@fortawesome/free-regular-svg-icons";
+import "../DateFilter/DateFilter.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+const DateFilter = ({ handleStartDate, handleEndDate }) => {
+  const [selectedStartDate,setSelectedStartDate ]=useState(null);
+  const [selectedEndDate,setSelectedEndDate ]=useState(null);
+  return (
+    
+      <div className="d-flex flex-row align-items-center">
+      <div className="date-wrapper d-flex flex-row align-items-center">
         <DatePicker
           className="date-box"
-          selected={startDate}
+          selected={selectedStartDate}
           dateFormat="dd-MM-yyyy"
           placeholderText="start date"
           onChange={(date) => {
-            if (date !== null) {
-              setStartDate(date);
-              // console.log(date.toLocaleDateString());
-              console.log(startDate)          
-            } else {
-              setStartDate(null);
-            }
+            setSelectedStartDate(date);
+            handleStartDate(date);
           }}
-          isClearable
+        
           scrollableMonthYearDropdown
         />
-        <span className="ml-2">~</span>
+        <FontAwesomeIcon icon={faCalendar} className="calender-icon ml-1"/>
+        </div>
+
+        <span className="ml-2 ">~</span>
+        <div className="date-wrapper d-flex flex-row align-items-center">
         <DatePicker
           className="date-box ml-2"
-          selected={endDate}
+          selected={selectedEndDate}
           dateFormat="dd-MM-yyyy"
           placeholderText="End date"
-          minDate={startDate}
+          minDate={selectedStartDate}
           onChange={(date) => {
-            if (date !== null) {
-              setEndDate(date);
-              console.log(endDate)
-              // console.log(date.toLocaleDateString());
-            } else {
-              setEndDate(null);
-            }
+            setSelectedEndDate(date)
+            handleEndDate(date);
           }}
-          isClearable
+      
         />
         
+        <FontAwesomeIcon icon={faCalendar} className="calender-icon ml-1"/>
+        
       </div>
-        </div>
-    );
+    </div>
+  );
 };
 
 export default DateFilter;

@@ -4,20 +4,16 @@ import "react-datepicker/dist/react-datepicker.css";
 import DateFilter from "../DateFilter/DateFilter";
 // import 'bootstrap';
 
-const Header = () => {
-  
-  // const filtered_date=data.filter(dateFilter);
-  //             function dateFilter(item){
-  //               return item.date>=startDate && item.date<=endDate;
-  //             }
-  //             // console.log(filtered_date);
+const Header = ({ handleStartDate, handleEndDate }) => {
   return (
     <div className="header">
       <div>
         <h3>Dashboard</h3>
       </div>
-      <DateFilter />
-      
+      <DateFilter
+        handleStartDate={handleStartDate}
+        handleEndDate={handleEndDate}
+      />
     </div>
   );
 };
