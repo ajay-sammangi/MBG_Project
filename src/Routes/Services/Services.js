@@ -48,7 +48,7 @@ const Services = () => {
               <DateFilter />
             </div>
           </div>
-          <div className="my-3 ml-4 mr-4">
+          <div className="services-list-wrapper my-3">
             <ServicesList />
           </div>
         </div>

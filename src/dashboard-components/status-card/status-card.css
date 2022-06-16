@@ -1,15 +1,35 @@
+.status-card-wrapper{
+    background-color: white;
+}
+.status-body-container{
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
 .status-card-section{
-    width: 180px;
+    width: 198px;
     align-items: center;
-    margin: 5px;
-    padding: 10px;
+    margin: 10px 20px 15px 10px;
+    padding: 5px;
+    background-color: #fff;
     border: 1px solid #d3d3d3;
     border-radius: 5px;
 }
-.status-img{
-    /* height: 50px; */
+.status-img-container{
+    width: 30%;
+    text-align: center;
+}
+
+.status-image{
     width: 50px;
+    color: #313a46;
+}
+.status-card-details{
+    margin-right: 10px;
+    width: 70%;
+    text-align: right;
+    
 }
 .status-count{
-    float: right;
+    /* float: right; */
+    text-align: right;
 }

@@ -36,26 +36,46 @@ function Home() {
     );
     setData(filtered_data);
   }, [startDate, endDate]);
+
+  const dummyJson = [
+    { title: "unassigned", count: "12" },
+    { title: "assigned", count: "12" },
+    { title: "completed", count: "12" },
+    { title: "incomplete", count: "12" },
+  ];
   return (
     <div className="App">
       <Sidemenu />
-      <div className="home-wrapper ml-2 mr-2">
+      <div className="home-wrapper pl-2 pr-2">
         <Header
           handleStartDate={handleStartDate}
           handleEndDate={handleEndDate}
         />
         <div className="status-card-container d-flex flex-row justify-content-between">
-          <div className="status-card">
-            <h4 className="ml-3 mt-2">Taxation</h4>
-            <Statuscard />
+          <div className="status-card d-flex flex-column">
+            <div>
+            <h5 className="status-card-heading mt-2">Taxation</h5>
+            </div>
+            <div className="status-wrapper">
+              {dummyJson.map((task) => (
+                <Statuscard title={task.title} count={task.count} />
+              ))}
+            </div>
           </div>
           <div className="status-card ml-4">
-            <h4 className="ml-3 mt-2">Legal</h4>
-            <Statuscard />
+          <div>
+          
+            <h5 className="status-card-heading mt-2">Legal</h5>
+            </div>
+            <div className="status-wrapper">
+              {dummyJson.map((task) => (
+                <Statuscard title={task.title} count={task.count} />
+              ))}
+            </div>
           </div>
         </div>
         <div className="ml-2 mr-2">
-          <h4>Recent Activity</h4>
+          <h5>Recent Activity</h5>
           <div className="activity-details-wrapper">
             <ActivityDetails data={data} />
           </div>

@@ -15,7 +15,7 @@ const DateFilter = ({ handleStartDate, handleEndDate }) => {
           className="date-box"
           selected={selectedStartDate}
           dateFormat="dd-MM-yyyy"
-          placeholderText="start date"
+          placeholderText=" start date"
           onChange={(date) => {
             setSelectedStartDate(date);
             handleStartDate(date);

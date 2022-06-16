@@ -1,5 +1,5 @@
 .service-wrapper{
-    width: calc(100% - 280px);
+    width: calc(100% - 240px);
     height: 100vh;
     overflow-y: auto;
     
@@ -9,8 +9,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 0px 10px;
+    margin: 10px 10px;
     border-bottom: 1px solid gray;
+    /* background-color: #f9f9f9; */
+}
+.services-list-wrapper{
+    margin: 10px 10px;
 }
 .search-div{
     position: relative;

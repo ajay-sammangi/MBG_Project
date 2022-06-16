@@ -1,6 +1,6 @@
 .sidemenu{
     height: 100vh;
-    width: 280px;
+    width: 240px;
     background-color: #313a46;
     display: flex;
     flex-direction: column;
@@ -10,15 +10,31 @@
 .sidemenu-icons{
     display: flex;
     flex-direction: row;
+    align-items: center!important;
     margin-top: 15px;
+    padding: 2px 5px;
+    border: 1px solid #313a46;
+}
+.select-menu{
+    width: 100%;
+}
+.sidemenu-icons:hover{
+    
+        /* background-color: #1e295d; */
+        /* color: #f1f5ff; */
+        cursor: pointer;
+        background: transparent;
+        border: 1px solid #fff;
+        border-radius: 5px;
+      
 }
 .sidemenu-fontIcons{
-    font-size: 25px;
+    font-size: 18px;
     color: #ffffff;
 }
 a{
     text-decoration: none!important;
     color: #ffffff!important;
     padding-left: 10px;
-    font-size: 22px;
+    font-size: 16px;
 }

@@ -1,5 +1,6 @@
 .form-wrapper{
-    width:calc(100% -40% -280px);
+    /* background-color: #f9f9f9; */
+    width:calc(100% -40% -240px);
     height: 100vh;
     overflow-y: scroll;
 }

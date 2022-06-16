@@ -26,7 +26,7 @@ const Form = () => {
         <div>
           <Sidemenu />
         </div>
-        <div className="form-wrapper ml-2 mr-2">
+        <div className="form-wrapper">
           <div className="header">
             <div className='d-flex flex-column align-items-center'>
               <h3 className='m-0'>Services</h3>

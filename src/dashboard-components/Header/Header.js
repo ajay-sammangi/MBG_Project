@@ -8,7 +8,7 @@ const Header = ({ handleStartDate, handleEndDate }) => {
   return (
     <div className="header">
       <div>
-        <h3>Dashboard</h3>
+        <h4 className="">Dashboard</h4>
       </div>
       <DateFilter
         handleStartDate={handleStartDate}
